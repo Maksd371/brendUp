@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Car shop</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #FEFBF6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class=" font-monserat">
+    <div
+        class="bg-[url('./img/2.jpg')] relative bg-cover bg-center bg-fixed h-[690px] w-full flex flex-col justify-start gap-[80px] items-center">
+        <div class=" flex flex-row w-full sm:px-10 px-2 justify-between  ">
+            <div class="font-bold text-[#FEFBF6] pt-2 text-[28px] flex flex-row gap-3 items-center"><img
+                    src="./img/logo.svg" alt="" class="w-[30px] h-[30px]">Logo</div>
+            <div class="flex flex-row gap-10 pt-4 text-[#FEFBF6]">
+                <span>Головна</span>
+                <span>Про нас</span>
+                <span>Послуги</span>
+            </div>
+            <div></div>
+        </div>
+        <div class="z-10 absolut  top-[100px] left-[23%] flex flex-col align-center w-full justify-center ">
+            <h1 class="text-center sm:text-[82px] text-[45px] font-bold text-[#FEFBF6] w-full">Кращі Авто Запчастини
+            </h1>
+            <p class="text-center  text-[22px] text-[#FEFBF6] w-full sm:px-[350px] px-[30px] pt-4 ">Обирайте найкраще
+                для свого
+                автомобіля! Надійна доставка, доступні ціни та консультації від експертів.</p>
+        </div>
+        <a href="#more">
+            <button class=" border-0 bg-[#FEFBF6] rounded-md p-3 font-semibold">Дізнатись більше</button>
+
+        </a>
+    </div>
+    <!-- cards -->
+    <div class=" flex flex-col bg-[#FEFBF6] w-full h-fit rounded-[50px] mt-[-40px] z-[999] relative pb-[60px]">
+        <!-- kryg blat -->
+        <div
+            class=" absolute bg-[#FEFBF6] top-[-30px] rounded-full w-[100px] h-[100px] mx-auto sm:left-[48%] left-[38%] flex justify-center ">
+            <img src="./img/down.png" alt="" class="w-[50px] h-[50px] mt-4">
+        </div>
+
+        <div class=" flex flex-row flex-wrap w-full justify-between sm:px-24 px-12 py-8 pb-">
+            <h1 class=" text-[60px] font-bold text-[#3D3C42] z-20"> Переваги </h1>
+            <span class=" text-[24px] w-[400px] text-[#909090] font-bold pr-10"> "Наше мастило - ключ до ідеальної
+                роботи
+                вашого двигуна"</span>
+        </div>
+        <div class="w-full sm:my-3 my-6 mx-auto h-[2px] bg-gray-300"> </div>
+
+        <div class=" flex sm:flex-row flex-row-reverse justify-between flex-wrap px-14 sm:gap-0 gap-3 sm:py-0 py-5">
+            <div class="flex flex-col justify-center sm:p-10 p-0 w-[600px] ">
+                <h2 class=" text-[#909090] text-[28px]">
+                    Надійне мастило для авто</h2>
+                <p class="sm:text-[34px] text-[24px] mt-2 text-[#3D3C42]">
+                    Захищає двигун, зменшує знос, продовжує термін служби автомобіля
+                </p>
+            </div>
+            <img src="./img/oil.jpg" alt="" class="sm:rounded-[70px] rounded-xl w-[630px]  z-10 sm:p-10 p-0 ">
+        </div>
+
+        <div class="w-full my-3 mx-auto h-[2px] bg-gray-300"> </div>
+
+        <div
+            class=" flex sm:flex-row-reverse flex-row-reverse justify-between flex-wrap px-14 sm:gap-0 gap-3 sm:py-0 py-5">
+            <div class="flex flex-col justify-center sm:p-10 p-0 w-[600px]">
+                <h2 class=" text-[#909090] text-[28px]">Масляний фільтр для авто
+                </h2>
+                <p class="sm:text-[34px] text-[24px] mt-2 text-[#3D3C42]">
+                    Очищає від забруднень, захищає двигун від зносу, продовжує термін
+                    служби автомобіля
+                </p>
+            </div>
+            <img src="./img/oilfltr.jpg" alt="" class="sm:rounded-[70px] rounded-xl w-[630px]  z-10 sm:p-10 p-0 ">
+        </div>
+
+        <div class="w-full my-3 mx-auto h-[2px] bg-gray-300"> </div>
+
+        <div class=" flex sm:flex-row flex-row-reverse justify-between flex-wrap px-14 sm:gap-0 gap-3 sm:py-0 py-5">
+            <div class="flex flex-col justify-center sm:p-10 p-0 w-[600px]">
+                <h2 class=" text-[#909090] text-[28px]">Повітряний фільтр для авто</h2>
+                <p class="sm:text-[34px] text-[24px] mt-2 text-[#3D3C42]">
+                    Очищає повітря, захищає систему від зносу, продовжує термін
+                    служби автомобіля </p>
+            </div>
+            <img src="./img/air.jpg" alt="" class="sm:rounded-[70px] rounded-xl w-[630px]  z-10 sm:p-10 p-0 ">
+        </div>
+    </div>
+
+    <div
+        class="relative h-[500px] bg-[url('./img/2bg.jpg')] relative bg-cover bg-center bg-fixed flex flex-row justify-evenly py-10">
+        <!-- <img src="./img/2bg.jpg" alt="" class="h-full"> -->
+        <div class="w-[300px] bg-white shadow-lg rounded-lg overflow-hidden h-fit sm:block hidden ">
+            <img class="w-full h-56 object-cover" src="./img/filter.jpg" alt="Leather Jacket">
+            <div class="p-4 text-center">
+                <p class="text-gray-500 text-sm mb-2">New Collection</p>
+                <h2 class="text-xl font-bold text-black">Discount 50% For<br> The First Transaction</h2>
+            </div>
+        </div>
+        <div class="w-[300px] bg-white shadow-lg rounded-lg overflow-hidden h-fit">
+            <img class="w-full h-56 object-cover" src="./img/maslo.jpg" alt="Leather Jacket">
+            <div class="p-4 text-center">
+                <p class="text-gray-500 text-sm mb-2">New Collection</p>
+                <h2 class="text-xl font-bold text-black">Discount 50% For<br> The First Transaction</h2>
+            </div>
+        </div>
+        <div class="w-[300px] bg-white shadow-lg rounded-lg overflow-hidden h-fit sm:block hidden">
+            <img class="w-full h-56 object-cover" src="./img/fltr.jpg" alt="Leather Jacket">
+            <div class="p-4 text-center">
+                <p class="text-gray-500 text-sm mb-2">New Collection</p>
+                <h2 class="text-xl font-bold text-black">Discount 50% For<br> The First Transaction</h2>
+            </div>
+        </div>
+    </div>
+    <div class=" relative rounded-[50px] ">
+        <div
+            class=" absolute bg-[#FEFBF6] top-[-30px] rounded-full w-[100px] h-[100px] mx-auto sm:left-[48%] left-[38%] flex justify-center ">
+            <img src="./img/down.png" alt="" class="w-[50px] h-[50px] mt-4">
+        </div>
+
+        <img src="./img/maslo.jpg" alt=""
+            class=" w-[250px] h-[250px] absolute top-[120px] left-[160px] rotate-45 rounded-xl sm:block hidden">
+        <img src="./img/fltr.jpg" alt=""
+            class=" w-[250px] h-[250px] absolute top-[280px] right-[160px] rounded-xl rotate-[-45deg] sm:block hidden">
+
+        <h1 class=" text-[#909090] text-[42px] w-fit mx-auto pt-[80px]" id="more">Наш магазин</h1>
+        <p class=" text-[#3D3C42] text-[22px] sm:w-[500px] w-[300px] mx-auto pt-[30px] text-center">Забезпечте своєму
+            авто найкращий
+            догляд з нашим моторним маслом! Ми пропонуємо високоякісні продукти для вашого двигуна, щоб забезпечити його
+            ефективну роботу та тривалий термін служби. Оберіть ідеальне масло для вашого автомобіля з нашого
+            асортименту!</p>
+        <div class="h-[2px] w-full bg-gray-300 mt-[250px]"></div>
+        <div class=" flex flex-row justify-between px-5 py-3 items-center">
+            <div class="font-bold text-[#3D3C42] pt-2 text-[28px] flex flex-row gap-3 items-center">
+                <img src="./img/logoBlack.svg" alt="" class="w-[30px] h-[30px]">
+                Logo
+            </div>
+            <div class="flex flex-row gap-3">
+                <span>Інформація</span><span>Контаки</span><span>Співпраця</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
